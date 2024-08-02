@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formcont{
+color: white;
+height: 100vh;
+background-color: rgb(146, 141, 141);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.childd{
+    width: 60vw;
+    height: 90vh;
+    background-image:linear-gradient(to right,black, blue);
+    border-bottom: 1px solid white;
+}
+.childd h1,p{
+text-align: center;
+margin-top: 20px;
+}
+.childd p{
+    margin-bottom: 30px;
+}
+.subchild{
+    width: 50vw;    
+    height: 65vh;
+    padding-top:30px;
+    padding-left: 20px;
+    border: 2px solid white;
+    margin: auto;
+}
+.labell{
+ margin-left: 13px;
+}
+.inputt{
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    margin-left: 120px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.inpemail{
+    margin-left: 100px;
+}
+.inpbillnum{
+    margin-left: 145px;
+}
+.inpphonenum{
+    margin-left: 130px;
+}
+.textarea{
+    margin-left: 210px; 
+    height: 100px;
+}
+.buttsum{
+margin-left: 385px;
+margin-right: 10px;
+}
+.but{
+    height: 30px;
+    width: 100px;
+    background-color: orangered;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
