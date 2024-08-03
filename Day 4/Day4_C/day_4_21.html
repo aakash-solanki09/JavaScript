@@ -1,0 +1,29 @@
+<!-- You are offering a discount to customers who either have a membership card or 
+whose total purchase amount is above $100. Write a JavaScript snippet that checks if a customer is
+eligible for a discount and prints "Discount Applied" or "No Discount". -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>day_4_21</title>
+ </head>
+ 
+ <body>
+     <p id="demo"></p>
+     <script>
+         let coustmerName = prompt("enter Coustmer:-").toLowerCase();
+         let membershipCard = prompt("enter yes or no if the card is avilable(give answer in yes or no only):-").toLowerCase();
+         let purchaseAmount = parseInt(prompt("enter purchase amount  of coustmer(enter only number):-"));
+         if( membershipCard == "yes" || purchaseAmount > "100"){
+         document.getElementById("demo").innerHTML=coustmerName+(" you are eligible for discount"); 
+         }
+         else{
+             document.getElementById("demo").innerHTML=coustmerName+(" yor are not eligible for discount"); 
+         }
+         
+     </script>
+ </body>
+ 
+ </html>

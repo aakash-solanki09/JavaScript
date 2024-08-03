@@ -1,0 +1,34 @@
+<!-- Write a program which tells the number of days in a month.
+  Enter a month: January
+  January has 31 days.
+
+  Enter a month: JANUARY
+  January has 31 day
+
+  Enter a month: February
+  February has 28 days.
+
+  Enter a month: FEbruary
+  February has 28 days. -->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4 _08</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+     let month = prompt("Enter the month:-");
+    month = month.toLowerCase();
+    switch(true){
+        case ( month =="january"||month =="march" ||month =="may" ||month =="july"||month =="august" ||month =="october"|| month =="december") : document.getElementById("demo").innerHTML= month + " has 31 days";break;
+        case ( month =="april" || month =="june" || month =="september" || month =="november" ) : document.getElementById("demo").innerHTML= month + " has 30 days";break;
+        case  ( month =="february" )  : document.getElementById("demo").innerHTML= month + " has 28 days";break;
+        default:document.getElementById("demo").innerHTML="Month Name is not valid";
+   } 
+    </script>
+</body>
+</html>

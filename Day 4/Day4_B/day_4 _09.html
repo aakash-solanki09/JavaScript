@@ -1,0 +1,24 @@
+<!-- Write a program which tells the number of days in a month, now consider leap year. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4 _09</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let year = parseInt(prompt("enter a year :-"));
+        if(year % 4 == 0 && (year % 400 == 0 || year % 100 != 0)){
+            document.getElementById("demo").innerHTML="Leap year";
+        }
+        else{
+            document.getElementById("demo").innerHTML=" Not Leap year";
+        }
+    </script>
+</body>
+
+</html>

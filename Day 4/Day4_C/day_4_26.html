@@ -1,0 +1,27 @@
+<!-- Implement a simple calculator using the switch statement
+  that performsaddition, subtraction, multiplication, or division based on user input two values. -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4_26</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+         let num1=parseInt(prompt("Enter the number1:-"));
+         let num2=parseInt(prompt("Enter the number2:-"));
+         let toperform=prompt("Enter the + for addition - for substraction * for multiplication / for division % for modulas:-");
+        switch(toperform){
+        case ("+"):  document.write("addition:- "+(num1 + num2));break;
+        case ("-"):  document.write("substraction:- "+(num1 - num2));break;
+        case ("*"):  document.write("Multiplication:- "+(num1 * num2));break;
+        case ("/"):  document.write("Division:- "+(num2 / num1));break;
+        case ("%"):  document.write("Modulas:- "+(num2 % num1));break;
+        default : document.write("Invalid Choice");
+    }
+    </script>
+</body>
+</html>

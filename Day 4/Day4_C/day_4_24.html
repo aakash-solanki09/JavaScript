@@ -1,0 +1,28 @@
+<!--Write a JavaScript program that prompts the user to enter a number and then checks 
+if the number is positive, negative, or zero. Display an appropriate message for each case.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>day_4_24</title>
+ </head>
+ 
+ <body>
+     <p id="demo"></p>
+     <script>
+         let num = parseInt(prompt("enter the number (enter only number value):-"));
+         if(num === 0){
+         document.getElementById("demo").innerHTML=("zero"); 
+         }
+         else if(num > 0){
+            document.getElementById("demo").innerHTML= num+(" is positive");
+         }
+         else{
+            document.getElementById("demo").innerHTML= num+(" is negative");
+         }
+     </script>
+ </body>
+ 
+ </html>

@@ -1,0 +1,24 @@
+<!-- Write a JavaScript code snippet that take 3 input value and store in identifier and
+compares three numbers x, y, and z and prints the greatest number using the ternary operator. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4_15</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+       let a=parseInt(prompt("Enter the first value:-"));
+       let b=parseInt(prompt("Enter the second value:-"));
+       let c=parseInt(prompt("Enter the third value:-"));
+       c = (a>b) ? ((a>c) ? a : c ) :  ((b>c) ? b : c ) ;
+       document.getElementById("demo").innerHTML= c + " is greater ";
+    </script>
+</body>
+
+</html>

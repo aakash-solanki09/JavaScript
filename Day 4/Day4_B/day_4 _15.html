@@ -1,0 +1,36 @@
+<!-- Check your bdate and take input from user as birthdate and print the exact age of user . -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4 _15</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+  <script>
+   let now = new Date();
+   let day = parseInt(prompt("Enter a birthdate only day in number dont use 0 before insert date:-"));
+   let month = parseInt(prompt("Enter a birthdate only month in number use 0 before insert month:-"));
+   let year = parseInt(prompt("Enter a birthdate only year in number use 0write full eg:-2024:-"));
+    day = now.getDate() - day;
+    month = now.getDay() - month;
+    year = now.getFullYear() - year;
+    if(day >= 0 && month >= 0 && year >= 0){
+        document.getElementById("demo").innerHTML= "Your age is " + year;
+        document.getElementById("demo1").innerHTML= (day) + " days " + (12 - month) + " months are remaing for your birthday" ;  
+    }
+    else if(day < 0 && month >= 0 && year >= 0){
+        document.getElementById("demo").innerHTML= "Your age is " + year;
+        day=Math.abs(day);
+        document.getElementById("demo1").innerHTML= (day) + " days " + (12 - month) + " months are remaing for your birthday" ;  
+    }
+    else{
+        day=Math.abs(day); month=Math.abs(month);
+        document.getElementById("demo").innerHTML= "Your age is " + (year - 1);
+        document.getElementById("demo1").innerHTML= day + " days " + month + " months are remaing for your birthday" ;
+    }
+  </script>  
+</body>
+</html>

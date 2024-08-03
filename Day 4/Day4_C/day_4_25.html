@@ -1,0 +1,37 @@
+<!-- Write a JavaScript program that prompts the user to enter the total purchase amount 
+and then calculates the discount based on the following criteria:
+If the amount is greater than $100, a discount of 10% is applied.
+If the amount is between $50 and $100, a discount of 5% is applied.
+If the amount is less than $50, no discount is applied.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4_25</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let purchaseAmount = parseInt(prompt("enter the purchase amount (enter only number value):-"));
+        if(purchaseAmount >=100){
+            purchaseAmount=purchaseAmount - (purchaseAmount*0.10);
+        document.getElementById("demo").innerHTML=("Total amount of purchasing after discount is :-")+purchaseAmount; 
+        }
+        else if(purchaseAmount >100 && purchaseAmount >=50){
+            purchaseAmount=purchaseAmount - (purchaseAmount*0.05);
+            document.getElementById("demo").innerHTML=("Total payable amount  after discount is :-")+purchaseAmount; 
+        }
+        else if(purchaseAmount >0 && purchaseAmount < 50){
+           document.getElementById("demo").innerHTML= ("Total payable amount ")+purchaseAmount;
+        }
+        else{
+            document.getElementById("demo").innerHTML= ("did not purchased anything");
+        }
+    </script>
+</body>
+
+</html>

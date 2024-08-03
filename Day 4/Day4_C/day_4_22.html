@@ -1,0 +1,29 @@
+<!-- You are building a voting eligibility checker. Write a JavaScript snippet that checks 
+ if a person is eligible to vote. The person is eligible if they are above 18 years old and
+  are a citizen of the country.
+ -->
+<!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>day_4_22</title>
+ </head>
+ 
+ <body>
+     <p id="demo"></p>
+     <script>
+         let voterName = prompt("enter Voter name:-").toLowerCase();
+         let age = parseInt(prompt("enter the age of voter (enter only number):-"));
+         if(age >= 18){
+         document.getElementById("demo").innerHTML=voterName+(" you are eligible for Voting"); 
+         }
+         else{
+             document.getElementById("demo").innerHTML=voterName+(" yor are not eligible for voting"); 
+         }
+         
+     </script>
+ </body>
+ 
+ </html>

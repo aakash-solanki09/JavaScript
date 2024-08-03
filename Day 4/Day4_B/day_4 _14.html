@@ -1,0 +1,38 @@
+<!-- Write a code the outer if statement checks the weather variable.
+If it’s “sunny,” it further checks the temperature variable to determine
+the type of day it is (hot, warm, or cool).
+Depending on the values of weather and temperature,
+different messages will be logged to the html page .  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4 _14</title>
+ </head>
+ <body>
+    <p id="demo"></p>
+    <script>
+        let weather = prompt("enter the weather condition (sunny or not)");
+        document.getElementById("demo").innerHTML="area";
+        weather=weather.toLowerCase();
+        if(weather == "sunny"){
+        let temp = parseInt(prompt("enter the temperature in degree celcius:- "));
+        switch(true){
+            case (temp > 30 && temp <= 70):document.getElementById("demo").innerHTML="Day is Hot";break;
+            case  (temp > 20 && temp <= 30) :document.getElementById("demo").innerHTML="Day is Warm";break;
+            case  (temp > 10 && temp <= 20) :document.getElementById("demo").innerHTML="Day is Cool";break;
+            case  (temp > -10  && temp <= 10) :document.getElementById("demo").innerHTML="Day is VeryCool";break;
+            case  (temp > -80  && temp <= -10) :document.getElementById("demo").innerHTML="Day is is frigid day";break;
+            default:document.getElementById("demo").innerHTML="Duniya hee khatm";
+        }
+        }
+        else{
+            document.getElementById("demo").innerHTML="NO Data for this input please insert sunny"; 
+        }
+
+
+    </script>
+ </body>
+ </html>
+ 

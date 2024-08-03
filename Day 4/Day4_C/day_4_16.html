@@ -1,0 +1,18 @@
+<!-- 16. Write a JavaScript code snippet that take number from user using prompt(), 
+ if the input number n is even or odd using the ternary operator and prints "Even" or "Odd". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4_16</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    let num = parseInt(prompt("enter a number:- "));
+    num = (num % 2 == 0) ? "even" : "odd" ;
+    document.getElementById("demo").innerHTML=num;
+    </script>
+</body>
+</html>

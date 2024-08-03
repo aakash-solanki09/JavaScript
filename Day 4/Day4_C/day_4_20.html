@@ -1,0 +1,31 @@
+<!-- Suppose you are creating a login system. 
+ Write a JavaScript snippet that checks if the username and password are both correct. 
+ If both are correct, it should print "Login Successful"; otherwise, it should print "Login Failed". 
+ using if else condition. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4_20</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        let username = prompt("enter username").toLowerCase();
+        let password=prompt("enter the passsword");
+        if(username == "admin" && password == "1714"){
+        document.getElementById("demo1").innerHTML=("Login succesful"); 
+        }
+        else{
+            document.getElementById("demo1").innerHTML=("Login Failed"); 
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!-- Using Ternary operator take input from user and
+  select tea or coffee , then according to user choice , print output in browser. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4_7</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let choice = prompt("Enter your choice (tea or coffee):").toLowerCase();
+
+       choice= (choice=="tea" || choice == "coffee") ? choice : "invalid choice";
+        document.getElementById("demo").innerHTML=choice;
+
+    </script>
+</body>
+</html>

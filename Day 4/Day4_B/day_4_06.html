@@ -1,0 +1,27 @@
+<!-- Check if the season is Autumn, Winter, Spring or Summer. If the user input is :using switch case 
+September, October or November, the season is Autumn.
+December, January or February, the season is Winter.
+March, April or May, the season is Spring
+June, July or August, the season is Summer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_4_06</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    let month = prompt("Enter the month:-");
+    month = month.toLowerCase();
+    switch(true){
+        case (month =="september" || month =="november" || month =="october" ) : document.getElementById("demo").innerHTML="Season is Autumn";break;
+        case (month =="december" || month =="january" || month =="feburary" ) : document.getElementById("demo").innerHTML="Season is Winter";break;
+        case (month =="march" || month =="april" || month =="may" ) : document.getElementById("demo").innerHTML="Season is Spring";break;
+        case (month =="june" || month =="july" || month =="august" ) : document.getElementById("demo").innerHTML="Season is Summer";break;
+        default:document.getElementById("demo").innerHTML="Month Name is not valid";
+   }       
+</script>
+</body>
+</html>

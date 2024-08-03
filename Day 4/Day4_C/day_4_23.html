@@ -1,0 +1,30 @@
+<!-- A student can graduate if they have completed all required credits and their GPA is above 2.0.
+Write a JavaScript snippet that checks if a student meets these requirements and
+prints "Eligible to Graduate" or "Not Eligible to Graduate".
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>day_4_23</title>
+ </head>
+ 
+ <body>
+     <p id="demo"></p>
+     <script>
+         let studentName = prompt("enter Student name:-").toLowerCase();
+         let cpga = parseFloat(prompt("enter the CGPA of student (enter only Float value):-"));
+         let  graduate = prompt("enter yes or no if you get your  all credit (enter yes or no only):-").toLowerCase();
+         if(graduate == "yes" && cpga > "5.0"){
+         document.getElementById("demo").innerHTML= studentName+(" you are eligible for Graduate"); 
+         }
+         else{
+             document.getElementById("demo").innerHTML= studentName+(" yor are not eligible for Graduate"); 
+         }
+         
+     </script>
+ </body>
+ 
+ </html>
