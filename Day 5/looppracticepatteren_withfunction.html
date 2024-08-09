@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern_function</title>
+</head>
+
+<body>
+    <script>
+        //1. 
+        // * * * * * 
+        // * * * * * 
+        // * * * * * 
+        // * * * * * 
+        // * * * * * 
+
+        /* function squarePrint(ch){
+            for(let i=1 ; i<=5 ; i++){
+                for(let j=1 ; j<=5 ; j++){
+                document.write(ch);
+            }
+            document.write("</br>");
+            }
+        } */
+
+        /* squarePrint("*"); */
+
+        //2.
+        //* 
+        // * * 
+        // * * * 
+        // * * * * 
+        // * * * * * 
+
+        /* function squarePrint(ch){
+            for(let i=1 ; i<=5 ; i++){
+                for(let j=1 ; j<=i ; j++){
+                document.write(ch);
+            }
+            document.write("</br>");
+            }
+        }
+        
+        squarePrint("*"); */
+
+        //3.
+        // * * * * * 
+        // * * * * 
+        // * * * 
+        // * * 
+        // * 
+
+
+        /* function squarePrint(ch){
+            for(let i=5 ; i>=1 ; i--){
+                for(let j=1 ; j<=i ; j++){
+                document.write(ch);
+            }
+            document.write("</br>");
+            }
+        } */
+
+        /* squarePrint("*"); */
+
+
+        //4.
+        // 1
+        // 12
+        // 123
+        // 1234
+        // 12345
+
+
+        /* function squarePrint(){
+            for(let i=1 ; i<=5 ; i++){
+                for(let j=1 ; j<=i ; j++){
+                document.write(j);
+            }
+            document.write("</br>");
+            }
+        }
+        
+        squarePrint(); */
+
+        //5.
+        // A
+        // AB
+        // ABC
+        // ABCD
+        // ABCDE
+
+        /* function squarePrint(){
+            for(let i= 65 ; i <= 69 ; i++){
+                for(let j= 65 ; j <= i ; j++){
+                document.write(String.fromCharCode(j));
+            }
+            document.write("</br>");
+            }
+        }
+        
+        squarePrint();  */
+
+        //6. 
+        //     *    
+        //    ***   
+        //   *****  
+        //  ******* 
+        // *********
+
+
+        /* function squarePrint(ch) {
+            for (let i = 1; i <= 5; i++) {
+
+                for (let j = 5; j >= i; j--) {
+                    document.write("&nbsp;&nbsp;");
+                }
+                for (let k = 1; k <= (2 * i) - 1; k++) {
+                    document.write(ch);
+                }
+                document.write("</br>");
+            }
+        }
+
+        squarePrint("*");
+ */
+
+        //     *    
+        //    ***   
+        //   *****  
+        //  ******* 
+        // *********
+        //  ******* 
+        //   *****  
+        //    ***   
+        //     *  
+        /* 
+                function squarePrint(ch) {
+                    for (let i = 1; i <= 5; i++) {
+        
+                        for (let j = 5; j > i; j--) {
+                            document.write("&nbsp;&nbsp;");
+                        }
+                        for (let k = 1; k <= (2 * i) - 1; k++) {
+                            document.write(ch);
+                        }
+                        document.write("</br>");
+                    }
+        
+                    for (let i = 4; i >= 1; i--) {
+        
+                        for (let j = 4; j >= i; j--) {
+                            document.write("&nbsp;&nbsp;");
+                        }
+                        for (let k = 1; k <= (2 * i) - 1; k++) {
+                            document.write(ch);
+                        }
+                        document.write("</br>");
+                    }
+                }
+        
+                squarePrint("*");
+         */
+
+
+        //8
+        // * * * * * 
+        // *       * 
+        // *       * 
+        // *       * 
+        // * * * * * 
+
+
+
+        /*  function squarePrint(ch) {
+             for (let i = 1; i <= 5; i++) {
+                 for (let j = 1; j <= 5; j++) {
+                     if (i===1 || j === 1 || i === 5 || j ===5) {
+                         document.write(ch+" ");
+                     }
+                     else {
+                         
+                         document.write("&nbsp;&nbsp;&nbsp;");
+                     }
+                 }
+                 document.write("</br>");
+             }
+         }
+ 
+         squarePrint("*");
+  */
+
+        //9.
+        // 1
+        // 23
+        // 456
+        // 78910
+
+
+        function squarePrint(k) {
+            for (let i = 1; i <= 4; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write(k++);
+                }
+                document.write("</br>");
+            }
+        }
+        squarePrint(1);
+        
+    </script>
+</body>
+
+</html>

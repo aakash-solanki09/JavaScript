@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+        /*   Using a for loop iterate one String "DebugShala" and print their output in different lines. */
+
+        /*  let str = `Aakash`; */
+        /* for(let i=0 ; i <= str.length-1 ; i++){
+          document.write(str[i]+"<br>");
+         } */
+
+        /*   for(let a of str){
+             document.write(a);
+            } */
+
+        /* for(let i=0 ; i <= str.length-1 ; i++){
+      document.write(str.charAt(i)+"<br>");
+     } */
+
+        // 2. Concatenate three string and assign in some different String.
+
+        /* let str1 = `Aakash`, str2 = `Kailash`, str3 = `Solanki`, newString;
+ */
+        /*   newString = str1 + " " + str2 + " " + str3 ;
+             document.write(newString); */
+
+        /* newString = `${str1} ${str2} ${str3} `
+        document.write(newString); */
+
+        /*  newString = str1.concat(" ", str2, " ", str3);
+         document.write(newString);
+         document.write(str5);  */
+
+        /* 3. Create a string and display its length. */
+
+        // let str = "Aakash",count=0;
+
+        /*  for(let i=0 ; str[i] !== undefined ; i++){
+             count++;
+         } */
+
+        /*  for(let i=0 ; str.charAt(i) !== "" ; i++){
+             count++;
+         } */
+
+        /*  document.write(str.length); */
+        /*   document.write(count); */
+
+
+        //  4. Extract the first three characters from a string.
+        // let st = "Aakash";
+
+        /* for(let i=0; i<3 ;i++){
+            document.write(st[i]);
+        } */
+
+        //document.write(st.slice(0,3)); 
+        // document.write(st.slice(-6,-3));
+
+        //  document.write(st.substring(0,3));
+        // not allowed negative index in substring  document.write(st.substring(-6,-3));
+
+
+        // Convert a given string to uppercase.
+
+        //let str ="Aakash";
+        /*   let result="";
+           for(let i=0 ;i< str.length ;i++){
+               if(!(str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) ){
+                result +=String.fromCharCode(str.charCodeAt(i)-32);
+               }
+               else{
+                   result += str[i];
+               }
+           } 
+           document.write(result); */
+
+        /*  str=str.toUpperCase();
+         document.write(str); */
+
+
+        /*   8. Find the position of the first occurrence of "JavaScript" in a string. */
+        /*  let str = "Learning JavaScript at DebugShala";
+ 
+         let index = str.indexOf("JavaScript");
+         document.write(index); */
+        /*  9. Find the position of the last occurrence of "o" in a string. */
+
+        /*  let str = "Learning JavaScript at DebugShala";
+ 
+         let index = str.lastIndexOf("g");
+         document.write(index);  */
+
+        /* 
+                Check if a string includes the word "DebugShala". */
+        /* let str = "Welcome to DebugShala!";
+
+        let trfl = str.includes("delcome");
+        document.write(trfl); */
+
+        /*   11. Check if a string starts with "Hello". */
+        /*   let str = "Hello, JavaScript!";
+          let  search = "Helle"; */
+        /* if(str.indexOf("ello") === 0){
+           document.write(`"yes string start with " ${search}`);
+        }
+        else{
+           document.write(`"no string start with " ${search}`);
+        } */
+
+        /* let trfl = str.startsWith(search);
+        document.write(trfl); */
+
+        /* 12. Check if a string ends with an exclamation mark (!). */
+        /* let str = "Welcome to the world of JavaScript!1230!";
+        let search = "30!"; */
+        /*  if(str.lastIndexOf(search) === str.length-1){
+             document.write(`"yes string end with " ${search}`);
+          }
+          else{
+             document.write(`"no string end with " ${search}`);
+          } 
+  */
+
+        /* let trfl = str.endsWith(search);
+        document.write(trfl); */
+
+
+        /*   13. Replace the word "World" with "JavaScript" in a string. */
+        /*   let str = "Hello, World!";
+  
+           str=str.replace("World!" , "Aakash");
+          document.write(str); */
+
+        /* 14. Replace all occurrences of "a" with "A" in a string. */
+        /*   let str = "JavaScript is amazing!";
+          str=str.replaceAll("a" , "A");
+         document.write(str);  */
+        //Split a string into an array of words.
+        /* let str = "Split this string into an array of words";
+
+        let arr = str.split(" ");
+        document.write(arr);
+        document.write("<br>"+arr[2]); */
+
+        //16. Trim the whitespace from both ends of a string.
+        //  let str = "     DebugShala ";
+
+        /*  str= str.trim();
+         console.log(str); */
+
+        //7. Access the third character in a string using bracket notation.
+        /*  let str = "JavaScript";
+ 
+         document.write(str[2]); */
+        //  18. Access the fifth character in a string using charAt().
+        /* let str = "JavaScript";
+        document.write(str.charAt(4)); */
+        //19. Create a multiline string using template literals and print it.
+       /*  let str1 = "Pranshuraj";
+        let str2 = "Sunil";
+        let str3 = "Yadav"
+        let newstr = `${str1} ${str2} ${str3}`;
+        document.write(newstr); */
+        //20. Use string interpolation to embed variables in a string.
+        /* let name = "Tarun"; let course = "JavaScript";
+         name = `${name} ${course}`;
+        document.write(name); */
+
+       // 21. Iterate over a string using a for loop and print each character on a new line.
+       /*  let str = "DebugShala";
+        for(let i=0 ;i < str.length ;i++){
+            document.write(str[i]+"<br>");
+        } */
+      //  22. Extract  a substring from the 2nd to the 5th character of a string.
+        /* let str = "JavaScript"; 
+        let newstr = str.substring(1,5);
+        document.write(newstr); */
+
+    </script>
+</body>
+
+</html>

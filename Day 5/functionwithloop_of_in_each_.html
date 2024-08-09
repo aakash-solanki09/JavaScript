@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOP for in,of and each </title>
+</head>
+
+<body>
+    <script>
+        //1. Write an program to print the marks of a student in an object using for loop?
+        //obj = {a:90,b:80,c:70}
+
+       /*  function studentMarks_inloop(){
+            obj = {a:90,b:80,c:70};
+            for(let marks in obj){
+                document.write(marks + "= " + obj[marks] +" ");
+            }
+        } */
+
+/* 
+        function studentMarks_ofloop(){
+            const arr = [10, 20, 30];
+            for(let marks of arr){
+                document.write(marks + " ");
+            }
+        }
+
+        studentMarks_ofloop(); */
+
+        function studentMarks_for_each(){
+            const arr =[100,200,300];
+            arr.forEach(function(marks){ 
+                document.write(marks+" ");
+            })
+        }
+        studentMarks_for_each();
+    </script>
+</body>
+
+</html>
